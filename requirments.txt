@@ -1,0 +1,32 @@
+# --- 1. Core RAG Framework & Orchestration ---
+llama-index-core
+# The core LlamaIndex library for data structuring, chunking, and querying.
+
+# --- 2. LLM & Embedding Integration (Gemini) ---
+google-genai
+# The official Google Generative AI SDK for calling Gemini models (Flash for LLM, and the Embeddings model).
+
+# --- 3. Vector Database Integration (Pinecone) ---
+pinecone-client
+# The Python client for connecting to and querying your Pinecone vector index.
+
+# --- 4. PDF and Document Parsing ---
+# LlamaIndex uses separate readers for different file types.
+# For robust PDF parsing (critical for insurance policies):
+pypdf
+unstructured
+# These are common dependencies LlamaIndex relies on for local PDF handling.
+# *Note: For extremely complex tables/figures, consider the 'llama-parse' service, 
+# but start with these standard readers.*
+
+# --- 5. Web Service & Deployment (FastAPI) ---
+fastapi
+# The framework for building your API endpoints.
+uvicorn
+# The ASGI server for running FastAPI locally and in production.
+gunicorn
+# The production WSGI/ASGI server runner for reliable deployment on Render.
+
+# --- 6. Utility ---
+python-dotenv
+# Used for reading API keys and configurations from a local .env file during development.
